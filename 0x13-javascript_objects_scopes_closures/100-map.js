@@ -1,9 +1,5 @@
 #!/usr/bin/node
-exports.dict = {
-    89: 1,
-    90: 2,
-    91: 1,
-    92: 3,
-    93: 1,
-    94: 2
-  };
+const list = require('./100-data').list;
+const mapped = list.map(function (value, index) { return value * index; });
+console.log(list);
+console.log(mapped);
